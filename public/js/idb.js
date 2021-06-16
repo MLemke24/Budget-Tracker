@@ -53,7 +53,7 @@ function uploadItem() {
                     const transaction = db.transaction(['new_budget'], 'readwrite');
                     const itemObjectStore = transaction.objectStore('new_budget');
                     itemObjectStore.clear();
-                    alert('All saved pizza has been submitted!');
+                    alert('All transactions have been submitted!');
                 })
                 .catch(err => {
                     console.log(err);
